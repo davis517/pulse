@@ -1,4 +1,6 @@
 # Pulse : A Complete Medical Care Application
+#### Tagline
+*Joining hands for better care*
 ## Introduction
 This unique application is a platform that links all the inter connected hospitals and healthcare facilities to provide better 
 healthcare to the individuals at the right time. Now a days most of the problems occurring in the medical field is mainly due to 

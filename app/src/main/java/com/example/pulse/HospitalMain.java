@@ -90,9 +90,9 @@ public class HospitalMain extends AppCompatActivity
 
         } else if (id == R.id.hosp_nearby) {
 
-        } else if (id == R.id.hosp_nearby) {
-
         } else if (id == R.id.abt_app) {
+
+        } else if (id == R.id.abt_dev) {
 
         }
 

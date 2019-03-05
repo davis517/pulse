@@ -5,33 +5,38 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/Home"
-            android:icon="@drawable/ic_menu_camera"
+            android:id="@+id/hosphome"
+            android:icon="@android:drawable/ic_menu_compass"
             android:title="Home" />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
-        <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
-        <item
-            android:id="@+id/nav_manage"
+            android:id="@+id/hosp_sett"
             android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
+            android:title="Configuration" />
+        <item
+            android:id="@+id/hosp_emerg"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Nearby Emergency" />
+        <item
+            android:id="@+id/hosp_resources"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Resources" />
+
+        <item
+            android:id="@+id/hosp_nearby"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Nearby Hospitals" />
     </group>
 
-    <item android:title="Communicate">
+    <item android:title="About">
         <menu>
             <item
-                android:id="@+id/nav_share"
+                android:id="@+id/abt_app"
                 android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
+                android:title="About App" />
             <item
-                android:id="@+id/nav_send"
+                android:id="@+id/abt_dev"
                 android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
+                android:title="Developers" />
         </menu>
     </item>
 

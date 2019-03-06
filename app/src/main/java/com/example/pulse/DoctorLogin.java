@@ -1,16 +1,13 @@
 package com.example.pulse;
 
-import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -36,8 +33,8 @@ public class DoctorLogin extends AppCompatActivity {
         textView=(TextView)findViewById(R.id.textView2);
 
         btnLogin=(Button)findViewById(R.id.button7);
-        inputEmail = (EditText) findViewById(R.id.editText11);
-        inputPassword = (EditText) findViewById(R.id.editText12);
+        inputEmail = (EditText) findViewById(R.id.editText50);
+        inputPassword = (EditText) findViewById(R.id.editText51);
 
 
 

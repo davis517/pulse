@@ -14,13 +14,13 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class HospitalMain extends AppCompatActivity
+public class UserMain2 extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_hospital_main);
+        setContentView(R.layout.activity_user_main2);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -56,7 +56,7 @@ public class HospitalMain extends AppCompatActivity
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.hospital_main, menu);
+        getMenuInflater().inflate(R.menu.user_main2, menu);
         return true;
     }
 
@@ -81,34 +81,29 @@ public class HospitalMain extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.hosphome) {
+        if (id == R.id.user_Home) {
             // Handle the camera action
-        } else if (id == R.id.hosp_sett) {
+        } else if (id == R.id.user_Det) {
+
+        } else if (id == R.id.user_NR) {
+
+        } else if (id == R.id.user_SpotEmerg) {
+            Intent i=new Intent(UserMain2.this,RequestPost.class);
+            startActivity(i);
 
 
-        } else if (id == R.id.hosp_emerg) {
+        } else if (id == R.id.user_PR) {
 
-            Intent ij=new Intent(HospitalMain.this,Nearby.class);
-            startActivity(ij);
-
-        } else if (id == R.id.hosp_resources) {
-
-            Intent ij=new Intent(HospitalMain.this,Hospitalpost.class);
-            startActivity(ij);
-
-
-        } else if (id == R.id.hosp_nearby) {
-
-        } else if (id == R.id.hosp_logout) {
-
-        } else if (id == R.id.abt_app) {
+        } else if (id == R.id.user_Logout) {
 
         } else if (id == R.id.abt_dev) {
 
-        }
+        } else if (id == R.id.abt_app) {
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        drawer.closeDrawer(GravityCompat.START);
-        return true;
+        }
+            DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+            drawer.closeDrawer(GravityCompat.START);
+            return true;
+
     }
 }

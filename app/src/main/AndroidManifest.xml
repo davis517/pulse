@@ -9,10 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Hospitalpost"></activity>
+        <activity android:name=".Nearby" />
+        <activity android:name=".RequestPost" />
+        <activity
+            android:name=".UserMain2"
+            android:label="@string/title_activity_user_main2"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".DonorMain2"
             android:label="@string/title_activity_donor_main2"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".HospitalLogin2" />
         <activity android:name=".DonorLogin2" />
         <activity android:name=".registration" />

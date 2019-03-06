@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/user_Home"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Home" />
+        <item
+            android:id="@+id/user_Det"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="My Details" />
+        <item
+            android:id="@+id/user_NR"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Blood Requests" />
+        <item
+            android:id="@+id/user_SpotEmerg"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Spot Emergencies" />
+        <item
+            android:id="@+id/user_PR"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Past Records" />
+
+        <item
+            android:id="@+id/user_Logout"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Logout" />
+    </group>
+
+    <item android:title="About">
+        <menu>
+            <item
+                android:id="@+id/abt_app"
+                android:icon="@drawable/ic_menu_share"
+                android:title="About App" />
+            <item
+                android:id="@+id/abt_dev"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Developers" />
+        </menu>
+    </item>
+
+</menu>

@@ -86,6 +86,8 @@ public class UserMain2 extends AppCompatActivity
         } else if (id == R.id.user_Det) {
 
         } else if (id == R.id.user_NR) {
+            Intent i=new Intent(UserMain2.this,Usernoti.class);
+            startActivity(i);
 
         } else if (id == R.id.user_SpotEmerg) {
             Intent i=new Intent(UserMain2.this,RequestPost.class);

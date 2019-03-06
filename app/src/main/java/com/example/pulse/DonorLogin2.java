@@ -43,7 +43,7 @@ public class DonorLogin2 extends AppCompatActivity {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 if(task.isSuccessful()){
-                                   Intent na=new Intent(DonorLogin2.this,DoctorMain.class);
+                                   Intent na=new Intent(DonorLogin2.this,DonorMain2.class);
                                    startActivity(na);
                                 }
                                 else {

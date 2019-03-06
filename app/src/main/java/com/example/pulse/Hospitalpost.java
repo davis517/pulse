@@ -47,16 +47,16 @@ public class Hospitalpost extends AppCompatActivity {
 
         firebaseAuth = FirebaseAuth.getInstance();
         dtabaseReferance = FirebaseDatabase.getInstance().getReference();
-        requestblood = (Button) findViewById(R.id.button10);
+        requestblood = (Button) findViewById(R.id.button61);
         hospitaltyped = (EditText) findViewById(R.id.editText61);
         bloodtyped = (EditText) findViewById(R.id.editText62);
         urgencytyped = (EditText) findViewById(R.id.editText63);
 
 
-        requestdoc = (Button) findViewById(R.id.button10);
-        hospitaltyped1 = (EditText) findViewById(R.id.editText61);
-        bloodtyped1 = (EditText) findViewById(R.id.editText62);
-        urgencytyped1 = (EditText) findViewById(R.id.editText63);
+        requestdoc = (Button) findViewById(R.id.button62);
+        hospitaltyped1 = (EditText) findViewById(R.id.editText64);
+        bloodtyped1 = (EditText) findViewById(R.id.editText65);
+        urgencytyped1 = (EditText) findViewById(R.id.editText66);
 
         progressDialog = new ProgressDialog(this);
 

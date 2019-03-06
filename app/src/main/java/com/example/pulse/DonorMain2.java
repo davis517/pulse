@@ -1,5 +1,6 @@
 package com.example.pulse;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -15,7 +16,6 @@ import android.view.MenuItem;
 
 public class DonorMain2 extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,6 +41,7 @@ public class DonorMain2 extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
     }
+
 
     @Override
     public void onBackPressed() {
@@ -85,6 +86,8 @@ public class DonorMain2 extends AppCompatActivity
         } else if (id == R.id.don_Details) {
 
         } else if (id == R.id.don_Req) {
+            Intent iu=new Intent(DonorMain2.this,Doctornoti.class);
+            startActivity(iu);
 
         } else if (id == R.id.don_PAUsage) {
 

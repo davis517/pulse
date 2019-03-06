@@ -13,13 +13,13 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class HospitalMain extends AppCompatActivity
+public class DonorMain2 extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_hospital_main);
+        setContentView(R.layout.activity_donor_main2);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -55,7 +55,7 @@ public class HospitalMain extends AppCompatActivity
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.hospital_main, menu);
+        getMenuInflater().inflate(R.menu.donor_main2, menu);
         return true;
     }
 
@@ -80,22 +80,19 @@ public class HospitalMain extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.hosphome) {
+        if (id == R.id.don_Home) {
             // Handle the camera action
-        } else if (id == R.id.hosp_sett) {
+        } else if (id == R.id.don_Details) {
 
-        } else if (id == R.id.hosp_emerg) {
+        } else if (id == R.id.don_Req) {
 
-        } else if (id == R.id.hosp_resources) {
+        } else if (id == R.id.don_PAUsage) {
 
-        } else if (id == R.id.hosp_nearby) {
-
-        } else if (id == R.id.hosp_logout) {
-
-        } else if (id == R.id.abt_app) {
+        } else if (id == R.id.don_Logout) {
 
         } else if (id == R.id.abt_dev) {
 
+        } else if (id == R.id.abt_app) {
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

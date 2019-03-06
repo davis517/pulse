@@ -14,9 +14,9 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
-public class HospitalLogin extends AppCompatActivity {
+public class DonorLogin2 extends AppCompatActivity {
 
-    Button login3;
+    Button login2;
     TextView email1,password1;
     private FirebaseAuth auth;
     String email,password;
@@ -27,27 +27,27 @@ public class HospitalLogin extends AppCompatActivity {
 
         auth=FirebaseAuth.getInstance();
 
-        login3=(Button)findViewById(R.id.button4);
-        email1=(TextView)findViewById(R.id.editText2);
-        password1=(TextView)findViewById(R.id.editText3);
+        login2=(Button)findViewById(R.id.button10);
+        email1=(TextView)findViewById(R.id.editText18);
+        password1=(TextView)findViewById(R.id.editText19);
 
 
 
-        login3.setOnClickListener(new View.OnClickListener() {
+        login2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String email=email1.getText().toString().trim();
                 final String password=password1.getText().toString().trim();
                 auth.signInWithEmailAndPassword(email,password)
-                        .addOnCompleteListener(HospitalLogin.this, new OnCompleteListener<AuthResult>() {
+                        .addOnCompleteListener(DonorLogin2.this, new OnCompleteListener<AuthResult>() {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 if(task.isSuccessful()){
-                                    Intent na=new Intent(HospitalLogin.this,DoctorMain.class);
-                                    startActivity(na);
+                                   Intent na=new Intent(DonorLogin2.this,DoctorMain.class);
+                                   startActivity(na);
                                 }
                                 else {
-                                    Toast.makeText(HospitalLogin.this," Not DONE ", Toast.LENGTH_LONG).show();
+                                    Toast.makeText(DonorLogin2.this," Not DONE ", Toast.LENGTH_LONG).show();
 
                                 }
 
